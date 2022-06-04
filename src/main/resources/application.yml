@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/waimai?serverTimezone=UTC
+    username: root
+    password: password
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #映射实体类时删除-并按照驼峰法命名
+  global-config:
+    db-config:
+      id-type: assign_id
+images:
+  path: D:\gitCangKu\images\
